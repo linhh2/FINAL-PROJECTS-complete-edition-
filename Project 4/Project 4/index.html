@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75207b72ca.js" crossorigin="anonymous"></script>
+    <title>Linh</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="gallery">
+                <div class="gallery-header">
+                    <h4>Gallery</h4> 
+                    <div class="option">
+                        <div class="profile-edit-btn">
+                            <a class="button" href="#" onclick="openPopup()"><i class="fa-solid fa-pen-to-square"></i></a>
+                        </div>
+                        <div class="profile-delete-btn">
+                            <i style="color:red;" class="fa-solid fa-xmark"></i>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="gallery-body">
+                    <div class="carousel-images">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <!-- <div class="slide left">
+                            <span class='fas fa-angle-left'></span>
+                        </div>
+                        
+                        <div class="slide right">
+                            <span class='fas fa-angle-right'></span>
+                        </div> -->
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up" id="pop-up">
+            <div class="popup-content" >
+                <div class="popup-header">
+                    <h4>Gallery</h4>
+                    <span onclick="closePopup()"><i class="fa-solid fa-xmark"></i></i></span>
+                </div>
+
+                <div class="popup-body">
+                    <div class="popup-wrapper">
+                        <div class="popup-image">
+                            <output id="container"></output>
+                        </div>
+
+                        <!-- <div onclick="side_slide(-1)" class="slide left">
+                            <span class='fas fa-angle-left'></span>
+                          </div>
+                          <div onclick="side_slide(1)" class="slide right">
+                            <span class='fas fa-angle-right'></span>
+                          </div> -->
+                    </div>
+                    
+                    <form class="form" action="#" method="post" id="form">
+						<input type="file" name="Image" id="image" multiple="" class="d-none" onchange="image_select()">
+						<button class="btn btn-sm btn-primary" type="button" onclick="document.getElementById('image').click()">Choose Images</button>
+				  </form>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="dom.js"></script>
+</body>
+</html>
